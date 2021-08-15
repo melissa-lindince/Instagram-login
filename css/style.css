@@ -1,0 +1,153 @@
+:root {
+  --background-color: #fafafa;
+  --blue-color: #0095f6;
+  --body-color: #999;
+  --dark-color: #262626;
+  --border-color: #dbdbdb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  color: var(--body-color);
+  font-size: 1.4;
+  background-color: var(--background-color);
+}
+
+.general {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.account {
+  text-align: center;
+}
+
+.general-main {
+  margin-top: 3rem;
+}
+
+.login {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color);
+  padding: 2rem 4.5rem;
+}
+
+.logo {
+  width: 12rem;
+}
+
+.picture {
+  border-radius: 50%;
+  width: 5rem;
+  padding: 5px 0px;
+}
+
+.button-continue {
+  padding: 15px 0px;
+}
+
+.button-continue a {
+  background-color: var(--blue-color);
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 7px;
+  border-radius: 5%;
+}
+
+.color-blue {
+  color: var(--blue-color);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.not-account {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  padding: 1.5rem 4.5rem;
+}
+
+.get-the-app p {
+  margin-top: 1rem;
+  color: var(--dark-color);
+}
+
+.getApp a img {
+  width: 8.5rem;
+  margin-top: 1rem;
+}
+
+.phone img {
+  width: 24rem;
+  margin-right: 2rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.footer {
+  font-size: 0.8rem;
+}
+.links-footer {
+  margin-bottom: 2rem;
+}
+.links-footer span {
+  margin-right: 0.8rem;
+}
+
+.links-footer span a {
+  color: var(--body-color);
+}
+
+@media (max-width: 1024px) {
+  .general {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .general {
+    padding-top: 1px;
+    margin-top: 1px;
+    width: 100%;
+    border: none;
+  }
+
+  .account {
+    width: 100%;
+  }
+
+  .login,
+  .not-account {
+    border: none;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    text-align: center;
+  }
+
+  .links-footer {
+    width: 450px;
+  }
+}
